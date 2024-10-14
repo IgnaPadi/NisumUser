@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
+spring:
+  application:
+    name: user
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:testdb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
